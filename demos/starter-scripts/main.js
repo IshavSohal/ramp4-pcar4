@@ -386,6 +386,27 @@ let config = {
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                infoType: 'template',
+                                content: `<div> This is another gif </div>`,
+                                expanded: false,
+                                children: [
+                                    {
+                                        infoType: 'template',
+                                        content: '<strong>behold</strong>',
+                                        expanded: false,
+                                        children: [
+                                            {
+                                                name: 'Custom Info Section',
+                                                infoType: 'template',
+                                                content: `<div>
+                                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif" />
+                                                            </div>`
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -397,7 +418,8 @@ let config = {
                         'basemap',
                         'export',
                         'layer-reorder',
-                        'areas-of-interest'
+                        'areas-of-interest',
+                        'new-fixture'
                     ]
                 },
                 mapnav: {
@@ -970,6 +992,10 @@ rInstance.fixture.add('export');
 
 // add areas of interest fixture
 rInstance.fixture.add('areas-of-interest');
+
+rInstance.fixture.add('snowman');
+
+rInstance.fixture.add('new-fixture');
 
 // load map if startRequired is true
 // rInstance.start();
