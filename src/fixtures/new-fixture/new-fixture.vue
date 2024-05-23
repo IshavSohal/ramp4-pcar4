@@ -19,5 +19,6 @@ const url = ref(
 .earth {
     padding: 20px;
     background-color: rgb(211, 153, 46);
+    text-align: center;
 }
 </style>
