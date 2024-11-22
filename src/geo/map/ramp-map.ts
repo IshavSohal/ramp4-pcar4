@@ -1000,6 +1000,8 @@ export class MapAPI extends CommonMapAPI {
      * @returns {Promise<void>} A promise that resolves when the map has finished zooming
      */
     async zoomToLevel(zoomLevel: number): Promise<void> {
+        console.log('level to zoom to ');
+        console.log(zoomLevel);
         if (this.esriView) {
             return this.esriView.goTo({ zoom: zoomLevel });
         } else {

@@ -16,13 +16,6 @@ class SnowmanFixture extends FixtureInstance {
         });
 
         this.$vApp.$el.appendChild(el.childNodes[0]);
-
-        // snowman self-terminates from its own component
-
-        // NOTE: right now Snowman terminates from inside its own component, but it can be done here as well 👇
-        // svInstance.$destroy(); // no longer supported in Vue 3
-        // this.$vApp.$el.removeChild(snowman);
-        // this.$iApi.fixture.remove(this);
     }
 
     removed(): void {
