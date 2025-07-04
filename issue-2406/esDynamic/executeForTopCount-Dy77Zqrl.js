@@ -1,0 +1,1 @@
+import{bq as n,bQ as c}from"./main-VekDu-pG.js";import{c as s}from"./queryTopFeatures-DJZH6QeF.js";async function e(o,t,a){const r=n(o);return(await s(r,c.from(t),{...a})).data.count}export{e as executeForTopCount};
