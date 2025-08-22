@@ -1,0 +1,1 @@
+import{cx as e,cy as o,cz as a}from"./main-BfV_Ya13.js";import{m as c}from"./ref-DDGAYI_z.js";const i=e(class extends o{constructor(){super(...arguments),this.key=a}render(t,s){return this.key=t,s}update(t,[s,r]){return s!==this.key&&(c(t),this.key=s),r}});export{i};

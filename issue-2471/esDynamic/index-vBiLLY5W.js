@@ -1,0 +1,20 @@
+import { a as o } from "./fabric-_aHsnos0.js";
+import { bx as n } from "./main-DeGq1-p9.js";
+class m extends n {
+  get config() {
+    return this.$iApi.fixture.get("export").config?.map;
+  }
+  async make(e) {
+    const a = await this.$iApi.geo.map.takeScreenshot({
+      quality: 1,
+      format: "png"
+    }), t = new Image();
+    t.src = a.dataUrl;
+    const i = await new Promise((r) => t.onload = () => r(t));
+    return new o.fabric.Image(i, e);
+  }
+}
+export {
+  m as default
+};
+//# sourceMappingURL=index-vBiLLY5W.js.map
